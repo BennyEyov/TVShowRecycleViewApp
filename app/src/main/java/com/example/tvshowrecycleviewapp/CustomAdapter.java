@@ -42,7 +42,7 @@
                 int position = getAdapterPosition();
                 if (position != RecyclerView.NO_POSITION) {
                     DataModel clickedItem = dataSet.get(position);
-                    String message = clickedItem.getCharacterDescription();
+                    String message = clickedItem.getLongerDescription();
                     Toast.makeText(v.getContext(), message, Toast.LENGTH_LONG).show();
                 }
             }
